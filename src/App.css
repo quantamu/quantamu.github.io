@@ -17,23 +17,35 @@
   
 }
 
-nav {
-  margin-top: 20px;
-  text-align: center;
-  margin-top: 11px;
-  color:black;
-  font-size: 1.2rem !important;
-
-}
-
 .header-content {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   width: 100%;
+  align-items: center;
+  
+
 }
 
 .header-logo {
   height: 40px;
+}
+
+
+.Navigation-header {
+  flex-grow: 1;
+  display:flex;
+  justify-content: center;
+  
+
+
+}
+
+nav {
+  text-align: center;
+  margin-top: 11px;
+  color:white;
+  font-size: 1.2rem !important;
+
 }
 
 nav a {
@@ -41,14 +53,12 @@ nav a {
   margin: 0 10px;
   font-family: 'Open Sans', sans-serif;
   text-decoration: none;
-  margin: auto;
   font-weight: 600 !important;
   font-size: 1.2rem !important;
   letter-spacing: 1px !important;
-  color: black;
+  color: white;
   transition: 0.2s ease;
-  margin-top: 0;
-  text-align:center;
+
 }
 
 nav a:hover{
@@ -69,7 +79,7 @@ nav a:hover{
   cursor: pointer;
   border-radius: 10px; 
   margin-left: auto;
-  margin-right: 20px;
+  margin-right: 75px;
   white-space: nowrap;
   
   
@@ -77,6 +87,28 @@ nav a:hover{
 }
 
 .join-us-button:hover {
-  background-color: #21a1f1;
+  background-color: #38b8d7;
+  text-decoration: none;
 }
 
+
+.Website-footer p{
+  font-family:'Open Sans', sans-serif;
+  font-weight: 600 !important;
+  letter-spacing: 1.5px !important;
+  font-size: 0.8 rem;
+  text-align:center;
+  color: black;
+  font-size: 1.2rem !important;
+}
+
+.Website-footer a {
+  align-items: center;
+  justify-content: space-between;
+
+}
+.Website-footer img {
+  margin: 0 10px;
+  height: 40px;
+  
+}
