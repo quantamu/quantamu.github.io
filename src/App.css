@@ -10,16 +10,28 @@
   font-family:'Courier New', Courier, monospace;
   padding: 20px;
   color: black;
+  display:flex;
+  align-items: center;
   
 }
 
 nav {
-  margin-top: 10px;
+  margin-top: 20px;
   text-align: center;
   margin-top: 11px;
   color:black;
   font-size: 1.2rem !important;
 
+}
+
+.header-content {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.header-logo {
+  height: 40px;
 }
 
 nav a {

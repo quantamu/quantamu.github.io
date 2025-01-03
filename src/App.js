@@ -9,7 +9,7 @@ function App() {
 
         <div class = "header-content">
           <a href = "App.js">
-            <img src='src/assets/logo.png' className="header-logo"></img>
+            <img src ={`${process.env.PUBLIC_URL}/assets/logo.png`} className="header-logo" alt="logo"> </img>
           </a>
             
         </div>
