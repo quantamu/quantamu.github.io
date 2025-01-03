@@ -1,4 +1,4 @@
-import logo from 'public/logo.png';
+
 import './index.css';
 
 
@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <header className="Website-header">
-        <img src={logo} className="header-logo"></img>
+        <img src={'${process.env.PUBLIC_URL}/logo.png'} className="header-logo"></img>
         <nav>
           <ul>
             <li><a href='#home'> Home </a></li>
