@@ -14,8 +14,12 @@
 }
 
 nav {
+  margin-top: 10px;
   text-align: center;
   margin-top: 11px;
+  color:black;
+  font-size: 1.2rem !important;
+
 }
 
 nav a {
@@ -30,6 +34,7 @@ nav a {
   color: black;
   transition: 0.2s ease;
   margin-top: 0;
+  text-align:center;
 }
 
 nav a:hover{
