@@ -1,9 +1,33 @@
+.App {
+  text-align: center;
+}
+
 .Website-header{
   font-family:'Courier New', Courier, monospace;
+  padding: 20px;
+  color: black;
   
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
 }
+
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #61dafb;
+}
+
+
+
