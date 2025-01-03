@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 .header-logo{
@@ -11,15 +12,14 @@
   padding: 20px;
   color: black;
   display:flex;
+  justify-content: space-between;
   align-items: center;
   background-color:#500001;
 
-  
 }
 
 .header-content {
   display: flex;
-  justify-content: space-between;
   width: 100%;
   align-items: center;
   
@@ -35,21 +35,20 @@
   flex-grow: 1;
   display:flex;
   justify-content: center;
-  
-
-
+  text-align:center;
 }
 
-nav {
+.Navigation-header nav {
   text-align: center;
   margin-top: 11px;
   color:white;
   font-size: 1.2rem !important;
+  font-weight: 1.2rem !important;
 
 }
 
-nav a {
-  display: inline-block;
+.Navigation-header a {
+  
   margin: 0 10px;
   font-family: 'Open Sans', sans-serif;
   text-decoration: none;
@@ -59,9 +58,10 @@ nav a {
   color: white;
   transition: 0.2s ease;
 
+
 }
 
-nav a:hover{
+.Navigation-header a:hover{
   color:  #138dac;
   text-decoration: none;
 }
@@ -73,17 +73,16 @@ nav a:hover{
   border: none;
   font-weight: 600 !important;
   letter-spacing: 1.5px !important;
-  font-size: 0.8 rem;
+  font-size: 0.8rem;
   text-align:center;
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 10px; 
   margin-left: auto;
   margin-right: 75px;
+  text-decoration: none;
   white-space: nowrap;
-  
-  
-  
+
 }
 
 .join-us-button:hover {
