@@ -1,34 +1,4 @@
-.App {
-  text-align: center;
-}
 
-.Website-header{
-  font-family:'Courier New', Courier, monospace;
-  padding: 20px;
-  color: black;
-  
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-nav ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-nav ul li a:hover {
-  text-decoration: none;
-  color: #61dafb;
-}
 
 
 
