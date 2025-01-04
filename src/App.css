@@ -91,15 +91,39 @@
 }
 
 
+
+.home-content {
+  display: inline;
+  font-weight: 600 !important;
+  letter-spacing: 1.5px;
+  font-size: 2.0rem;
+  text-align: left;
+  letter-spacing: 1.2px !important;
+}
+
+.home-content h1 {
+  margin-left: 50px;
+  background: linear-gradient(90deg, #381acf, #feb47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+
+
+}
+
+
 .Website-footer p{
   font-family:'Open Sans', sans-serif;
   font-weight: 600 !important;
   letter-spacing: 1.5px !important;
-  font-size: 0.8 rem;
+  font-size: 0.8rem;
   text-align:center;
   color: black;
   font-size: 1.2rem !important;
 }
+
+
 
 .Website-footer a {
   align-items: center;

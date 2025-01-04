@@ -26,6 +26,14 @@ function App() {
         <a href = "https://discord.gg/52RwejHd" className = "join-us-button">Join Us</a>
       </header>
 
+      <main className = "home-content">
+        <section>
+          <h1>What is quantum Computing?</h1>
+        </section>
+
+      </main>
+      
+
       <footer className ="Website-footer">
         <p>Contact us:</p>
         <a><img src ={mail}/></a>
