@@ -7,9 +7,9 @@ import './App.css';
 import { useEffect } from 'react';
 
 const messages = [
-  "Quantum computing is an emergent field of cutting-edge computer science harnessing the unique qualities of quantum mechanics to solve problems beyond the ability of even the most powerful classical computers - IBM",
-  "Quantum computers use qubits, which can represent both 0 and 1 simultaneously, allowing for more complex computations. - Quoate from someone Smart",
-  "Quantum entanglement allows particles to be interconnected in such a way that the state of one particle can instantly influence the state of another, no matter the distance between them. - YE"
+  "\"Quantum computing is an emergent field of cutting-edge computer science harnessing the unique qualities of quantum mechanics to solve problems beyond the ability of even the most powerful classical computers\" - IBM",
+  "\"Quantum computers use qubits, which can represent both 0 and 1 simultaneously, allowing for more complex computations.\" - Quoate from someone Smart",
+  "\"Quantum entanglement allows particles to be interconnected in such a way that the state of one particle can instantly influence the state of another, no matter the distance between them\". - YE"
 ];
 
 function App() {

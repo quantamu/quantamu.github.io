@@ -118,8 +118,9 @@
   padding: 20px;
   border-radius: 10px;
   margin: 20px 0;
-  font-family: Courier, monospace;
-  font-size:1rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size:1.0rem;
+  letter-spacing: 1px !important;
   font-weight: 600 !important;
   text-align: justify;
   width: 43%;
