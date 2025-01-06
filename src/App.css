@@ -103,13 +103,27 @@
 
 .home-content h1 {
   margin-left: 50px;
-  background: linear-gradient(90deg, #381acf, #feb47b);
+  background: linear-gradient(90deg, #c82727, #3d26be,#6539d5 );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
 
 
+}
+
+
+.transparent-box {
+  background-color: rgba(230, 221, 221, 0.5); 
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+  font-family: Courier, monospace;
+  font-size:1rem;
+  font-weight: 600 !important;
+  text-align: justify;
+  width: 43%;
+  margin-left:50px;
 }
 
 
