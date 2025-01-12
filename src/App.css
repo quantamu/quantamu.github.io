@@ -75,7 +75,10 @@ body {
   
   white-space: nowrap;
   background: linear-gradient(90deg, #00ff7f, #0085ff);
-  color: white;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
   border: none;
   padding: 10px 20px;
   border-radius: 25px;
@@ -141,33 +144,6 @@ body {
 }
 
 
-/* .content-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 50px;
-  max-width: 90%;
-  margin: 0 auto;
-  background: linear-gradient(145deg, #1c1c28, #2a2a3c);
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-  color: white;
-} */
-
-
-
-.side-image{
-  height:200px;
-  flex: 1;
-  
-}
-
-.button-container{
-  display:flex;
-  justify-content: center;
-  align-items:center;
-}
-
 .info-box {
   padding-top: 100px;
   align-items: center;
@@ -177,13 +153,13 @@ body {
 
 
 
-
 .learn-more-btn{
   white-space: nowrap;
   background: linear-gradient(90deg, #00ff7f, #0085ff);
   color: black;
   margin-top:20px;
   padding: 10px 20px;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   font-weight: bold;
   border:none;
@@ -220,13 +196,6 @@ body {
     opacity: 0;
   }
 }
-
-
-
-
-
-
-
 
 
 .Website-footer p{
