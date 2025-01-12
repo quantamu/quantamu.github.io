@@ -1,27 +1,18 @@
 import React, {useState} from 'react';
 import logo from './assets/logo2.png'
-import insta from './assets/insta.jpg'
 import linkedin from './assets/linkedin.png'
-import mail from './assets/mail.jpg'
+import insta from './assets/instagram.png'
+import mail from './assets/mail.png'
 import './App.css';
-import { useEffect } from 'react';
+import './ReactRotatingText.css';
 
-const messages = [
-  "\"Quantum computing is an emergent field of cutting-edge computer science harnessing the unique qualities of quantum mechanics to solve problems beyond the ability of even the most powerful classical computers\" - IBM",
-  "\"Quantum computers use qubits, which can represent both 0 and 1 simultaneously, allowing for more complex computations.\" - Quoate from someone Smart",
-  "\"Quantum entanglement allows particles to be interconnected in such a way that the state of one particle can instantly influence the state of another, no matter the distance between them\". - YE"
-];
+
+
+
+
 
 function App() {
-  const[currentMessageIndex, setCurrentMessageIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentMessageIndex((prevIndex) => (prevIndex + 1) % messages.length);
-    }, 4000);
-
-    return () => clearInterval(interval);
-  }, []);
+  var ReactRotatingText = require('react-rotating-text');
 
   return (
     <div className="App">
@@ -45,15 +36,17 @@ function App() {
       </header>
 
       <main className = "home-content">
-        <section>
-          <h1>What is quantum Computing?</h1>
-          <div className = "transparent-box">
-            <p> <i>{messages[currentMessageIndex]}</i></p>
+          <h1 className='title'>What is Quantum Computing?</h1>
+          <div className='info-box'>
+            <p >
+               Quantum computing is <ReactRotatingText  items={['Innovation', 'Powerful', 'Groundbreaking']} onTypingStart={() => console.log(`Typing Started`)} />
+            </p>
           </div>
-          
-        </section>
+          <div className="button-container">
+            <button className='learn-more-btn'>Learn More</button>
+          </div>
 
-      </main>
+       </main>
       
 
       <footer className ="Website-footer">
@@ -64,9 +57,9 @@ function App() {
 
       </footer>
       
-        
+    </div>  
       
-    </div>
+   
   );
 }
 
