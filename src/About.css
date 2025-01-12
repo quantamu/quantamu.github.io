@@ -1,0 +1,10 @@
+.title {
+    text-align: center;
+    font-size: 3rem;
+    display: inline-block; 
+    background-clip: text;
+    -webkit-background-clip: text;
+    background: linear-gradient(90deg, #ff4d4d, #0085ff);
+    -webkit-text-fill-color: transparent;
+    animation: fade-in 2s ease-in-out;
+}

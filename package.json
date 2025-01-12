@@ -6,6 +6,7 @@
   "dependencies": {
     "cra-template": "1.2.0",
     "react": "^19.0.0",
+    "react-devtools": "^6.0.1",
     "react-dom": "^19.0.0",
     "react-rotating-text": "^1.4.1",
     "react-router-dom": "^7.1.1",
