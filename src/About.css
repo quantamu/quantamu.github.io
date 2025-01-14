@@ -1,3 +1,8 @@
+.about-container {
+    padding: 20px;
+}
+
+
 .about-container h1 {
     text-align: left;
     font-size: 3rem;
@@ -10,12 +15,21 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+.text {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* Align items to the top */
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
 .text p {
     display:flex;
     margin-left: 100px;
     text-align: justify;
     max-height:500px;
-    max-width: 800px;
+    max-width: 700px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 10rem !important;
     font-size: 1.2rem;
@@ -24,8 +38,11 @@
     text-align: justify;
     
 }
+
+
 /* Dont look at this my bad! */
 .text2 {
+    flex: 2;
     background: linear-gradient(90deg, #6b4dff, #e22514);
     animation: fade-in 2s ease-in-out;
     font-size: 2.3rem !important;
@@ -45,4 +62,14 @@
       opacity: 1;
     }
   }
+
+.side-image {
+    align-self: flex-start;
+    height:300px;
+    margin-right: 140px;
+    animation: fade-in 2s ease-in-out;
+ 
+
+
+}
 
