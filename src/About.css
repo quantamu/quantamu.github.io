@@ -68,8 +68,33 @@
     height:300px;
     margin-right: 140px;
     animation: fade-in 2s ease-in-out;
- 
+}
 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10px,1fr));
+    gap:1px;
+}
 
+.grid-item {
+    text-align:center;
+    
+}
+
+.grid-logo {
+    width:80px;
+    height:80px;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.grid-logo:hover {
+    transform: scale(1.2);
+}
+
+.grid-description {
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.80em;
+    
 }
 
