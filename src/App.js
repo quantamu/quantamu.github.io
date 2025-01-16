@@ -7,6 +7,7 @@ import mail from './assets/mail.png';
 import './App.css';
 import './ReactRotatingText.css';
 import About from './About';
+import Officers from './Officers';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
               <nav>
                 <Link to='/about'>About Us</Link> |
                 <Link to='/'>Calendar</Link> |
-                <Link to='/'>Officers</Link> |
+                <Link to='/officers'>Officers</Link> |
                 <Link to='/'>Contact</Link>
               </nav>
             </div>
@@ -32,6 +33,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
+          <Route path='/officers' element= {<Officers />} />
         </Routes>
 
         <footer className="Website-footer">

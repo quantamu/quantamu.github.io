@@ -1,0 +1,32 @@
+.header-section {
+    font-family: 'Open Sans', sans-serif;
+    font-size:3rem !important;
+    background: linear-gradient(90deg, #6b4dff, #e22514);
+    animation: fade-in 2s ease-in-out;
+    background-clip:text;
+    display: inline-block;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.team-content {
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    gap: 10px;
+}
+
+.box  {
+  padding: 16px;
+  background: #1b1229;
+  border-radius: 15px;
+  transition: all .38s ease;
+  display: inline-block;
+}
+
+.officer-imges {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
