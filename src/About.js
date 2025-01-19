@@ -20,9 +20,7 @@ function About() {
                 </p> 
                 <img src = {bloch} className = 'side-image'/>
             </div>
-            </div>
             <p className = 'text2'> <b> Thanks and Gig'em! </b> </p>
-            </div>
                         
             <div className='grid-container'>
                 <div className='grid-item'>
