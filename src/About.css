@@ -30,7 +30,7 @@ html {
 
 .text p {
     display:flex;
-    margin-left: 100px;
+    margin-left: 160px;
     text-align: justify;
     max-height:500px;
     max-width: 700px;
@@ -70,7 +70,7 @@ html {
 .side-image {
     align-self: flex-start;
     height:300px;
-    margin-right: 140px;
+    margin-right: 200px;
     animation: fade-in 2s ease-in-out;
 }
 
@@ -98,8 +98,15 @@ html {
 .grid-description {
     margin-top: 10px;
     font-family: 'Open Sans', sans-serif;
-    font-size: 0.80em;
-    
+    font-size: 1rem;
+    font-weight: 10rem;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right:auto;
+    text-align:justify;
 }
 
 .download-link a {
