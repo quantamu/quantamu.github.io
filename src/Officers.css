@@ -9,19 +9,34 @@
     -webkit-text-fill-color:transparent;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 .team-content {
     display: flex;
-    justify-content: space-around;
-    align-items:center;
-    gap: 10px;
+    justify-content:center;
+    gap: 30px;
+    text-align:center;
+    margin-bottom: 30px;
 }
 
 .box  {
-  padding: 16px;
+  padding: 17px;
   background: #1b1229;
   border-radius: 15px;
   transition: all .38s ease;
-  display: inline-block;
+}
+
+.box p {
+    color: grey;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 10rem !important;
+}
+
+.box:hover {
+    transform:scale(1.08);
 }
 
 .officer-imges {

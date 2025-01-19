@@ -2,6 +2,10 @@
     padding: 20px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 .about-container h1 {
     text-align: left;
