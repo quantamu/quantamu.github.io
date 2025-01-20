@@ -24,7 +24,7 @@ function About() {
                     Graduate students may also participate in club activities, 
                     but with the added option to serve as a "graduate mentor," offering advice and research assistance to undergrads on a flexible schedule. QuantA&M was
                     founded halfway through the 2022-2023 academic year
-                    , and as such, we are slowly transitioning from a small student organization to a large one. We are currently offering free membership on an unofficial basis, all of our meetings are open to the student body, with no dues required. To learn more about what we do, check out the "Events" tab, and if you have further questions, contact someone from our team.
+                    , and as such, we are slowly transitioning from a small student organization to a large one. We are currently offering free membership on an unofficial basis, all of our meetings are open to the student body, with no dues required. To learn more about what we do, check out the "Calendar" tab, and if you have further questions, contact someone from our team. Our current officers are listed in the "Officers" tab, and our official email is tamu.quantum@gmail.com. 
                 </p> 
                 <img src = {bloch} className = 'side-image'/>
             </div>
@@ -58,10 +58,7 @@ function About() {
                 </div>
             </div>
 
-
-
         </main>
-
 
     );
 }
