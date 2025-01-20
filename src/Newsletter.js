@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Newsletter.css';
 
+// Using Sheets2API API OK
 function Newsletter() {
   const [newsletters, setNewsletters] = useState([]);
   const [loading, setLoading] = useState(true);
