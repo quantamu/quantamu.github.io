@@ -23,8 +23,7 @@ function App() {
               <nav>
                 <Link to='/about'>About Us</Link> |
                 <Link to='/calendar'>Calendar</Link> |
-                <Link to='/officers'>Officers</Link> |
-                <Link to='/'>Contact</Link>
+                <Link to='/officers'>Officers</Link> 
               </nav>
             </div>
           </div>
