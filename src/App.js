@@ -64,7 +64,7 @@ function Home() {
       <h1 className='title'>What is Quantum Computing?</h1>
       <div className='info-box'>
         <p>
-          Quantum computing is <ReactRotatingText items={['Innovation', 'Powerful', 'Groundbreaking']} onTypingStart={() => console.log(`Typing Started`)} />
+          Quantum computing is <ReactRotatingText items={['Innovation', 'Powerful', 'Groundbreaking', 'Next-Generation', 'Noisy']} onTypingStart={() => console.log(`Typing Started`)} />
         </p>
       </div>
       <div className="button-container">
