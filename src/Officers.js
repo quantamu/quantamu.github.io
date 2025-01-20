@@ -20,15 +20,11 @@ function officers()  {
                         <img src = {arjum} className = 'officer-images'/>
                         <p> Arjun Som, Vice President</p>
                     </div>
-                    <div className = 'box'>
-                        <img src = {samuel} className = 'officer-images'/>
-                        <p> Samuel Molero, Secretary & Webmaster</p>
-                    </div>
                 </div>
                 <div className = 'team-content'>
                     <div className = 'box'>
-                        <img src = {huang} className = 'officer-images'/>
-                        <p> Wie-Chih Huang, Graduate Mentor</p>
+                        <img src = {samuel} className = 'officer-images'/>
+                        <p> Samuel Molero, Secretary & Webmaster</p>
                     </div>
                     <div className = 'box'>
                         <img src = {andrii} className = 'officer-images'/>
