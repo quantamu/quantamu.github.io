@@ -32,10 +32,6 @@ function officers()  {
                     </div>
 
                 </div>
-
-
-
-            
         </main>
     )
 
