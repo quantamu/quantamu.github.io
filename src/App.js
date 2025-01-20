@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link, useNavigate } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, Link, useNavigate } from 'react-router-dom';
 import logo from './assets/logo2.png';
 import linkedin from './assets/linkedin.png';
 import insta from './assets/instagram.png';
