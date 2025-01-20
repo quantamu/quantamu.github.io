@@ -4,7 +4,6 @@ import sam from './assets/officers/sam.png'
 import arjum from './assets/officers/Arjum.png'
 import samuel from './assets/officers/samuel.png'
 import andrii from  './assets/officers/andrii.png'
-import huang from './assets/officers/huang.png'
 
 function officers()  {
 
