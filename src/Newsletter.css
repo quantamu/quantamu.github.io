@@ -1,0 +1,36 @@
+.newsletter-container {
+    padding: 20px;
+  }
+  
+  .header-section {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3rem !important;
+    background: linear-gradient(90deg, #6b4dff, #e22514);
+    animation: fade-in 2s ease-in-out;
+    background-clip: text;
+    display: inline-block;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .latest-newsletter {
+    margin-bottom: 40px;
+  }
+  
+  .previous-newsletters ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .previous-newsletters li {
+    margin-bottom: 10px;
+  }
+  
+  .previous-newsletters a {
+    color: #138dac;
+    text-decoration: none;
+  }
+  
+  .previous-newsletters a:hover {
+    color: grey;
+  }

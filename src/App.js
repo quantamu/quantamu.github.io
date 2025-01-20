@@ -8,7 +8,8 @@ import './App.css';
 import './ReactRotatingText.css';
 import About from './About';
 import Officers from './Officers';
-import Calendar from './Calendar'
+import Calendar from './Calendar';
+import Newsletter from './Newsletter';
 
 function App() {
   return (
@@ -23,7 +24,8 @@ function App() {
               <nav>
                 <Link to='/about'>About Us</Link> |
                 <Link to='/calendar'>Calendar</Link> |
-                <Link to='/officers'>Officers</Link> 
+                <Link to='/officers'>Officers</Link> |
+                <Link to='/newsletter'>Newsletter</Link>
               </nav>
             </div>
           </div>
@@ -36,7 +38,7 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/calendar' element={<Calendar />} /> 
           <Route path='/officers' element= {<Officers />} />
-         
+          <Route path='/newsletter' element={<Newsletter />} />
         </Routes>
 
         <footer className="Website-footer">
