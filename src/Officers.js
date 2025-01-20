@@ -4,7 +4,6 @@ import sam from './assets/officers/sam.png'
 import arjum from './assets/officers/Arjum.png'
 import samuel from './assets/officers/samuel.png'
 import andrii from  './assets/officers/andrii.png'
-import huang from './assets/officers/huang.png'
 
 function officers()  {
 
@@ -20,15 +19,11 @@ function officers()  {
                         <img src = {arjum} className = 'officer-images'/>
                         <p> Arjun Som, Vice President</p>
                     </div>
-                    <div className = 'box'>
-                        <img src = {samuel} className = 'officer-images'/>
-                        <p> Samuel Molero, Secretary & Webmaster</p>
-                    </div>
                 </div>
                 <div className = 'team-content'>
                     <div className = 'box'>
-                        <img src = {huang} className = 'officer-images'/>
-                        <p> Wie-Chih Huang, Graduate Mentor</p>
+                        <img src = {samuel} className = 'officer-images'/>
+                        <p> Samuel Molero, Secretary & Webmaster</p>
                     </div>
                     <div className = 'box'>
                         <img src = {andrii} className = 'officer-images'/>
@@ -36,10 +31,6 @@ function officers()  {
                     </div>
 
                 </div>
-
-
-
-            
         </main>
     )
 
