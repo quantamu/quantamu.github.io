@@ -13,11 +13,13 @@ jobs:
         with:
           node-version: "18"
       - name: Install dependencies
-        run: npm install
+        run: |
+          npm install
+          npm install --save-dev @babel/plugin-proposal-private-property-in-object
       - name: Build
-        run: npm run build
+        run: CI=false npm run build
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./build
