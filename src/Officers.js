@@ -31,6 +31,7 @@ function officers()  {
                         <p> Andrii Kryvenko, Treasurer </p>
                     </div>
 
+
                 </div>
         </main>
     )
