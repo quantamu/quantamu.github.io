@@ -4,6 +4,7 @@
   "homepage": "https://quantamu.github.io",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.14.0",
     "cra-template": "1.2.0",
     "react": "^19.0.0",
     "react-devtools": "^6.0.1",

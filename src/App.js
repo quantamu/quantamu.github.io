@@ -8,6 +8,7 @@ import './App.css';
 import './ReactRotatingText.css';
 import About from './About';
 import Officers from './Officers';
+import Calendar from './Calendar'
 
 function App() {
   return (
@@ -21,19 +22,22 @@ function App() {
             <div className="Navigation-header">
               <nav>
                 <Link to='/about'>About Us</Link> |
-                <Link to='/'>Calendar</Link> |
+                <Link to='/calendar'>Calendar</Link> |
                 <Link to='/officers'>Officers</Link> |
                 <Link to='/'>Contact</Link>
               </nav>
             </div>
           </div>
-          <a href="https://discord.gg/52RwejHd" className="join-us-button">Join Us</a>
+         
+          <a href="https://discord.gg/52RwejHd" className="join-us-button">Join Us</a>  
         </header>
 
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
+          <Route path='/calendar' element={<Calendar />} /> 
           <Route path='/officers' element= {<Officers />} />
+         
         </Routes>
 
         <footer className="Website-footer">

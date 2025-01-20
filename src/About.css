@@ -109,12 +109,5 @@ html {
     text-align:justify;
 }
 
-.download-link a {
-    color: #138dac;
-    text-decoration: none;
-}
 
-.download-link a:hover {
-    color: grey;
-}
 
