@@ -12,6 +12,10 @@ import Calendar from './Calendar';
 import Newsletter from './Newsletter';
 
 function App() {
+  const handleMailClick = () => {
+    window.location.href = 'mailto:tamu.quantum@gmail.com?subject=Contact Us&body=Hello, I am emailing to inquire about the QuantA&M student organization.';
+  };
+  
   return (
     <Router>
       <div className="App">
@@ -44,6 +48,7 @@ function App() {
         <footer className="Website-footer">
           <p>Contact us:</p>
           <a><img src={mail} alt="mail" /></a>
+          <a onClick={handleMailClick}><img src={mail} alt="mail" /></a>
           <a href="https://www.linkedin.com/company/qtam"><img src={linkedin} alt="linkedin" /></a>
           <a href="https://www.instagram.com/tamuquantum/"><img src={insta} alt="instagram" /></a>
         </footer>
