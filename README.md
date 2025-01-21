@@ -1,3 +1,4 @@
+<!--
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,40 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+-->
+
+# QuantA&M
+
+Welcome to the QuantA&M repository! This project is dedicated to the development and maintenance of the QuantA&M website, which provides information about our quantum computing club at Texas A&M University.
+
+## About QuantA&M
+
+QuantA&M is a student organization focused on exploring the fascinating world of quantum computing. Our mission is to educate and engage students in the principles and applications of quantum computing through various activities, including:
+
+- **Book Club**: Biweekly meetings to discuss quantum computing concepts using a common book or textbook.
+- **Workshops**: Hands-on sessions to learn and practice quantum computing skills.
+- **Guest Lectures**: Talks by experts in the field of quantum computing.
+- **Collaborative Projects**: Opportunities to work on quantum computing projects with peers.
+
+## Website Features
+
+The QuantA&M website includes the following features:
+
+- **Home Page**: Introduction to the club and its mission.
+- **About Us**: Information about the club's activities and goals.
+- **Calendar**: Schedule of upcoming events and meetings.
+- **Officers**: Profiles of the club's officers.
+- **Newsletter**: Access to the latest and previous newsletters.
+
+## Contributing
+
+We welcome contributions from the community! If you would like to contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them with a descriptive message.
+4. Push your changes to your forked repository.
+5. Open a pull request to the main repository.
+
+This project was created by Samuel Molero, with a template from [Create React App](https://github.com/facebook/create-react-app).
