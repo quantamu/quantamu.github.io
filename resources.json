@@ -20,14 +20,14 @@
     "category": "Member-Submitted Work",
     "resources": [
       {
-        "title": "Quantum Entanglement Research",
-        "date": "2023-03-10",
-        "type": "pdf",
-        "file": "quantum-entanglement-research-2023-03-10.pdf"
+        "title": "Qutrits, because Qubits aren’t weird enough",
+        "date": "2024-10-27",
+        "type": "link",
+        "file": "https://www.quantumgrad.com/article/805"
       },
       {
         "title": "My Journey in Quantum - Shameem Monjazeb",
-        "date": "2024-10-028",
+        "date": "2024-10-28",
         "type": "link",
         "url": "https://www.quantumgrad.com/article/806"
       }
