@@ -12,40 +12,6 @@
     color: #333;
   }
   
-  .coming-soon {
-    font-size: 1.5em;
-    color: #666;
-    margin-top: 50px;
-  }
-  
-  .add-resource {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .add-resource input {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 300px;
-  }
-  
-  .add-resource-button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .add-resource-button:hover {
-    background-color: #0056b3;
-  }
-  
   .resource-list {
     width: 100%;
     max-width: 600px;
@@ -63,5 +29,12 @@
     border: 1px solid #ccc;
     border-radius: 5px;
   }
-
   
+  .resource-list a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .resource-list a:hover {
+    text-decoration: underline;
+  }
