@@ -1,12 +1,36 @@
 [
-    {
-      "title": "Quantum Computing Introduction",
-      "date": "2023-01-01",
-      "file": "quantum-computing-intro-2023-01-01.pdf"
-    },
-    {
-      "title": "Advanced Quantum Algorithms",
-      "date": "2023-02-15",
-      "file": "advanced-quantum-algorithms-2023-02-15.pdf"
-    }
-  ]
+  {
+    "category": "PowerPoints from Meetings",
+    "resources": [
+      {
+        "title": "Quantum Computing Introduction",
+        "date": "2023-01-01",
+        "type": "pdf",
+        "file": "quantum-computing-intro-2023-01-01.pdf"
+      },
+      {
+        "title": "Advanced Quantum Algorithms",
+        "date": "2023-02-15",
+        "type": "pdf",
+        "file": "advanced-quantum-algorithms-2023-02-15.pdf"
+      }
+    ]
+  },
+  {
+    "category": "Member-Submitted Work",
+    "resources": [
+      {
+        "title": "Quantum Entanglement Research",
+        "date": "2023-03-10",
+        "type": "pdf",
+        "file": "quantum-entanglement-research-2023-03-10.pdf"
+      },
+      {
+        "title": "My Journey in Quantum - Shameem Monjazeb",
+        "date": "2024-10-028",
+        "type": "link",
+        "url": "https://www.quantumgrad.com/article/806"
+      }
+    ]
+  }
+]
