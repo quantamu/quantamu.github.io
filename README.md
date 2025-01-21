@@ -81,7 +81,6 @@ Welcome to the QuantA&M repository! This project is dedicated to the development
 QuantA&M is a student organization focused on exploring the fascinating world of quantum computing. Our mission is to educate and engage students in the principles and applications of quantum computing through various activities, including:
 
 - **Book Club**: Biweekly meetings to discuss quantum computing concepts using a common book or textbook.
-- **Workshops**: Hands-on sessions to learn and practice quantum computing skills.
 - **Guest Lectures**: Talks by experts in the field of quantum computing.
 - **Collaborative Projects**: Opportunities to work on quantum computing projects with peers.
 
@@ -107,6 +106,9 @@ We welcome contributions from the community! If you would like to contribute, pl
 
 This project was created by Samuel Molero, with a template from [Create React App](https://github.com/facebook/create-react-app).
 
+## Resource Contributions
+
+If you are a member of QuantA&M and want to contribute, please go to the `public` directory and find the `README.md` file to learn about contributing resources. This file contains detailed instructions on how to add new resources, including PDFs and hyperlinks, to the website.
 
 ## Upcoming Features
 
