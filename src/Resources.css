@@ -12,9 +12,20 @@
     color: #333;
   }
   
-  .resource-list {
+  .resource-category {
     width: 100%;
     max-width: 600px;
+    margin-bottom: 40px;
+  }
+  
+  .category-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #444;
+  }
+  
+  .resource-list {
+    width: 100%;
   }
   
   .resource-list ul {
