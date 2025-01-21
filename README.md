@@ -106,3 +106,12 @@ We welcome contributions from the community! If you would like to contribute, pl
 5. Open a pull request to the main repository.
 
 This project was created by Samuel Molero, with a template from [Create React App](https://github.com/facebook/create-react-app).
+
+
+## Upcoming Features
+
+We are constantly working to improve the QuantA&M website. Here are some features we plan to add in the future:
+
+- **Member Attendance**: A tracker for attendance of our meetings, offering awards for members showing up.
+- **Event Registration**: Online registration for workshops, lectures, and other events.
+- **Resource Library**: A collection of articles, tutorials, and other educational materials, created by QuantA&M members.
