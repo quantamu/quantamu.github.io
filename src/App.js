@@ -10,6 +10,7 @@ import About from './About';
 import Officers from './Officers';
 import Calendar from './Calendar';
 import Newsletter from './Newsletter';
+import Resources from './Resources';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
                 <Link to='/about'>About Us</Link> |
                 <Link to='/calendar'>Calendar</Link> |
                 <Link to='/officers'>Officers</Link> |
+                <Link to='/resources'>Resources</Link> |
                 <Link to='/newsletter'>Newsletter</Link>
               </nav>
             </div>
@@ -38,6 +40,7 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/calendar' element={<Calendar />} /> 
           <Route path='/officers' element= {<Officers />} />
+          <Route path='/resources' element= {<Resources />} />
           <Route path='/newsletter' element={<Newsletter />} />
         </Routes>
 

@@ -1,1 +1,67 @@
+.resources-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .header-section {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .coming-soon {
+    font-size: 1.5em;
+    color: #666;
+    margin-top: 50px;
+  }
+  
+  .add-resource {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .add-resource input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+  }
+  
+  .add-resource-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-resource-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .resource-list {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .resource-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .resource-list li {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
 
+  
