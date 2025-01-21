@@ -38,7 +38,7 @@ function Newsletter() {
   }
 
   const latestNewsletter = newsletters[newsletters.length - 1];
-  const previousNewsletters = newsletters.slice(0, newsletters.length - 1);
+  const previousNewsletters = newsletters.slice(0, newsletters.length - 1).reverse();
 
   return (
     <main className='newsletter-container'>
