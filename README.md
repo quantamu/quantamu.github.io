@@ -116,4 +116,4 @@ We are constantly working to improve the QuantA&M website. Here are some feature
 
 - **Member Attendance**: A tracker for attendance of our meetings, offering awards for members showing up.
 - **Event Registration**: Online registration for workshops, lectures, and other events.
-- **Resource Library**: A collection of articles, tutorials, and other educational materials, created by QuantA&M members.
+- **Forum Information**: QuantA&M has been invited to be one of the original members of a new undergraduate quantum computing forum. More will be published soon!
