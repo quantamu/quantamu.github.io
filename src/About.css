@@ -5,10 +5,10 @@
 html {
     scroll-behavior: smooth;
 }
-
+  
 
 .about-container h1 {
-    text-align: left;
+    margin: 20px 0;
     font-size: 3rem;
     background: linear-gradient(90deg, #ff4d4d, #0085ff);
     display: inline-block;
@@ -20,11 +20,23 @@ html {
 }
 
 .text {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     align-items: flex-start; /* Align items to the top */
+    /* justify-content: space-between;
+    gap: 20px;   */
+    /* font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    justify-content: space-between; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
     justify-content: space-between;
-    gap: 20px;
+    font-weight: 10rem;
 
 }
 
@@ -35,11 +47,13 @@ html {
     max-height:500px;
     max-width: 700px;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 10rem !important;
+    font-weight: 10rem;
     font-size: 1.2rem;
     animation: fade-in 2s ease-in-out;
     letter-spacing: 1.2px !important;
     text-align: justify;
+    flex: 1;
+    margin-right: 10px;
     
 }
 
@@ -68,10 +82,17 @@ html {
   }
 
 .side-image {
-    align-self: flex-start;
+    /* align-self: flex-start;
     height:300px;
     margin-right: 200px;
     animation: fade-in 2s ease-in-out;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto; */
+    max-width: 300px;
+    height: auto;
+    margin-right: 20rem;
 }
 
 .grid-container {
@@ -81,8 +102,39 @@ html {
 }
 
 .grid-item {
+    flex: 1 1 calc(33.333% - 20px);
     text-align:center;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: transparent;
+    text-align: center;
     
+}
+
+@media (max-width: 768px) {
+    .header-section {
+      font-size: 2rem;
+    }
+
+    .text {
+        font-size: 0.9rem;
+        flex-direction: column;
+      }
+    
+      .text p {
+        margin-right: 0;
+      }
+      
+      .text2 {
+        font-size: 1rem;
+        
+      }
+    
+      .grid-item {
+        flex: 1 1 calc(100% - 20px);
+      }
 }
 
 .grid-logo {

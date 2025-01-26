@@ -5,6 +5,12 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+@media (max-width: 768px) {
+  .header-section {
+    font-size: 2rem;
+  }
+}
+
 .App {
   text-align: center;
   

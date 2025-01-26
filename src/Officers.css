@@ -9,6 +9,12 @@
     -webkit-text-fill-color:transparent;
 }
 
+@media (max-width: 768px) {
+    .header-section {
+      font-size: 2rem;
+    }
+  }
+
 html {
     scroll-behavior: smooth;
 }

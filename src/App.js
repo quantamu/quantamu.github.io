@@ -32,7 +32,7 @@ function App() {
             </div>
           </div>
          
-          <a href="https://discord.gg/52RwejHd" className="join-us-button">Join Us</a>  
+          <a href="https://discord.gg/Uzkyn7Xpqq" className="join-us-button">Join Us</a>  
         </header>
 
         <Routes>

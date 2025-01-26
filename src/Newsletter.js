@@ -9,7 +9,7 @@ function Newsletter() {
 
   useEffect(() => {
     
-    const url = 'https://sheet2api.com/v1/YW0AA7DGRpKC/newsletter-database/Sheet1?';
+    const url = 'https://sheet2api.com/v1/YW0AA7DGRpKC/newsletter-database';
 
     fetch(url)
       .then(response => response.json())
