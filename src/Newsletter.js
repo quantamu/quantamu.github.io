@@ -32,7 +32,7 @@ function Newsletter() {
     return <p>Error loading newsletters: {error.message}</p>;
   }
 
-  if(newsletters.length == 0)
+  if(newsletters.length === 0)
   {
     return<p>No newsletters available.</p>;
   }
