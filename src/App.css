@@ -227,3 +227,97 @@ body {
   height: 50px;
   
 }
+
+.Sponsor-footer {
+  display:flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 0px;
+  border-top: 2px solid #ccc;
+  margin-top: 220px;
+}
+.Sponsor-header{
+  margin-top: 20px;
+  margin-bottom: -20px;
+}
+
+.Sponsor-header p{
+  flex-direction: column;
+  justify-content: center;
+  font-family:'Open Sans', sans-serif;
+  font-weight: 600 !important;
+  letter-spacing: 1.5px !important;
+  text-align:center;
+  color: white;
+  font-size: 1.5rem !important;
+  margin: 0;
+}
+
+.Sponsor-logos {
+  display: flex;
+  justify-content: space-evenly; 
+  align-items: center; 
+  flex-wrap: wrap; 
+  gap: 20px; 
+  width: 100%; 
+}
+
+.sponsor-logo {
+  max-width: 400px; 
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+  padding-top: 100px;
+}
+
+.sponsor-logo3 {
+  max-width: 280px; 
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+  padding-top: 50px;
+
+  padding-top: 100px;
+}
+
+/* To work with CS logo */
+.sponsor-logo2 {
+  max-width: 900px; 
+  width: 350px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+  padding-top: 100px;
+
+}
+
+.sponsor-logo3:hover {
+  transform: scale(1.1);
+}
+
+.sponsor-logo2:hover {
+  transform: scale(1.1);
+}
+
+.sponsor-logo:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .Sponsor-footer {
+    flex-direction: column; 
+    gap: 30px;
+  }
+
+  .sponsor-logo {
+    max-width: 100px; 
+  }
+
+  .sponsor-logo2 {
+    max-width: 100px; 
+  }
+
+  .sponsor-logo3 {
+    max-width: 100px; 
+  }
+}
