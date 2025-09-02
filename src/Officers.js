@@ -1,33 +1,41 @@
 import React from 'react';
 import './Officers.css'
-import sam from './assets/officers/sam.png'
-import arjum from './assets/officers/Arjum.png'
+import Shameem from './assets/officers/shameem.png'
+import nathan from './assets/officers/nathan.png'
 import samuel from './assets/officers/samuel.png'
-import andrii from  './assets/officers/andrii.png'
+import ezra from  './assets/officers/ezra.png'
 
 function officers()  {
 
     return (
         <main> 
-            <h1 className ='header-section'>Our Team</h1>
+            <h1 className ='header-section'><strong>Our Team</strong></h1>
                 <div className = 'team-content'>
                     <div className = 'box'>
-                        <img src = {sam} className = 'officer-images'/>
-                        <p> Samuel Bieberich, President</p>
+                        <div className ="image-wrap">
+                            <img src = {Shameem} className = 'officer-images'/>
+                        </div>
+                        <p> Shameem Monjazeb, President</p>
                     </div>
                     <div className = 'box'>
-                        <img src = {arjum} className = 'officer-images'/>
-                        <p> Arjun Som, Vice President</p>
+                        <div className ="image-wrap">
+                            <img src = {samuel} className = 'officer-images'/>
+                        </div>
+                        <p> Samuel Molero, Vice President</p>
                     </div>
                 </div>
                 <div className = 'team-content'>
                     <div className = 'box'>
-                        <img src = {samuel} className = 'officer-images'/>
-                        <p> Samuel Molero, Secretary & Webmaster</p>
+                        <div className ="image-wrap">
+                            <img src = {ezra} className = 'officer-images'/>
+                        </div>
+                        <p> Ezra SoRelle, Secretary </p>
                     </div>
                     <div className = 'box'>
-                        <img src = {andrii} className = 'officer-images'/>
-                        <p> Andrii Kryvenko, Treasurer </p>
+                        <div className ="image-wrap">
+                            <img src = {nathan} className = 'officer-images'/>
+                        </div>
+                        <p> Nathan Ngata, Treasurer </p>
                     </div>
 
                 </div>

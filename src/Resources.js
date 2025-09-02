@@ -24,7 +24,7 @@ function Resources() {
 
   return (
     <main className='resources-container'>
-      <h1 className='header-section'>Resources</h1>
+      <h1 className='header-section'><strong>Resources</strong></h1>
       {categories.map((category, index) => (
         <div key={index} className='resource-category'>
           <h2 className='category-title'>{category.category}</h2>

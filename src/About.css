@@ -1,5 +1,27 @@
 .about-container {
     padding: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+:root {
+  --square-size: clamp(220px, 28vw, 420px);
+}
+
+.content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr var(--square-size);
+  grid-auto-rows: var(--square-size);
+  gap: 20px;
+  align-items: stretch;
+  box-sizing: border-box;
+}
+
+.content-wrapper .text {
+  overflow-y: auto;
+  padding: 12px;
+  box-sizing: border-box;
+  max-height: 100%;
 }
 
 html {
@@ -20,56 +42,46 @@ html {
 }
 
 .text {
-    /* display: flex;
-    flex-direction: row;
-    align-items: flex-start; /* Align items to the top */
-    /* justify-content: space-between;
-    gap: 20px;   */
-    /* font-size: 1rem;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    justify-content: space-between; */
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    font-size: 1rem;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    justify-content: space-between;
-    font-weight: 10rem;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* vertical center the paragraph inside the square */
+  align-items: flex-start;
+  padding: 12px;
+  box-sizing: border-box;
+  overflow: hidden;          
+  
+  font-weight: 600;
 }
+
 
 .text p {
-    display:flex;
-    margin-left: 160px;
-    text-align: justify;
-    max-height:500px;
-    max-width: 700px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 10rem;
-    font-size: 1.2rem;
-    animation: fade-in 2s ease-in-out;
-    letter-spacing: 1.2px !important;
-    text-align: justify;
-    flex: 1;
-    margin-right: 10px;
-    
+  margin: 0;
+  text-align: justify;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: inherit;
+  /* clamp to a number of lines so the box stays visually balanced */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;    
 }
 
 
-/* Dont look at this my bad! */
-.text2 {
-    flex: 2;
-    background: linear-gradient(90deg, #6b4dff, #e22514);
-    animation: fade-in 2s ease-in-out;
-    font-size: 2.3rem !important;
-    text-align:justify;
-    margin-left:-500px;
-    background-clip:text;
-    display: inline-block;
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
+
+.content-wrapper .text {
+  
+  overflow-y: auto;
+  -ms-overflow-style: none; 
+  scrollbar-width: none;  
+  padding: 12px;
+  box-sizing: border-box;
+  max-height: 100%;
+}
+
+/* hide webkit scrollbar (Chrome, Safari) */
+.content-wrapper .text::-webkit-scrollbar {
+  display: none;
 }
 
 @keyframes fade-in {
@@ -82,17 +94,11 @@ html {
   }
 
 .side-image {
-    /* align-self: flex-start;
-    height:300px;
-    margin-right: 200px;
-    animation: fade-in 2s ease-in-out;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 20px auto; */
-    max-width: 300px;
-    height: auto;
-    margin-right: 20rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;          /* fill + crop to keep square */
+  display: block;
+  border-radius: 12px;
 }
 
 .grid-container {
@@ -114,27 +120,41 @@ html {
 }
 
 @media (max-width: 768px) {
-    .header-section {
-      font-size: 2rem;
-    }
+  .content-wrapper {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: 12px;
+  }
 
-    .text {
-        font-size: 0.9rem;
-        flex-direction: column;
-      }
-    
-      .text p {
-        margin-right: 0;
-      }
-      
-      .text2 {
-        font-size: 1rem;
-        
-      }
-    
-      .grid-item {
-        flex: 1 1 calc(100% - 20px);
-      }
+  /* hide the side image on small screens */
+  .side-image {
+    display: none;
+  }
+
+  /* make the text area expand and center its contents, no visible scrollbar */
+  .content-wrapper .text {
+    max-height: none;
+    overflow: visible; /* avoid hidden scrollbar */
+    padding: 8px 16px;
+  }
+
+  .text {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text p {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 100%;
+  }
+}
+
+/* very small screens tweak */
+@media (max-width: 420px) {
+  .side-image {
+    width: 100%;
+  }
 }
 
 .grid-logo {

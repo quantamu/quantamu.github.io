@@ -1,4 +1,5 @@
 .header-section {
+    margin-top: 30px;
     font-family: 'Open Sans', sans-serif;
     font-size:3rem !important;
     background: linear-gradient(90deg, #6b4dff, #e22514);
@@ -9,45 +10,84 @@
     -webkit-text-fill-color:transparent;
 }
 
-@media (max-width: 768px) {
-    .header-section {
-      font-size: 2rem;
-    }
-  }
+.team-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: stretch;
+  box-sizing: border-box;
+}
+
 
 html {
     scroll-behavior: smooth;
 }
 
-
-.team-content {
-    display: flex;
-    justify-content:center;
-    gap: 30px;
-    text-align:center;
-    margin-bottom: 30px;
-}
-
-.box  {
-  padding: 17px;
+/* fixed card size so all boxes match */
+.box {
+  flex: 0 0 260px;       /* fixed width */
+  max-width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
   background: #1b1229;
   border-radius: 15px;
-  animation: fade-in 2s ease-in-out;
-}
-
-.box p {
-    color: grey;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 10rem !important;
+  box-sizing: border-box;
+  margin-bottom: 30px;
 }
 
 .box:hover {
     transform:scale(1.08);
 }
 
-.officer-imges {
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
+
+/* image container enforces aspect ratio (square) */
+.image-wrap {
+  width: 100%;
+  aspect-ratio: 1 / 1;   /* modern browsers -> square */
+  overflow: hidden;
+  border-radius: 12px;
 }
 
+/* image fills container and is cropped if needed */
+.officer-images {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;     /* fill and crop, preserves aspect */
+}
+
+/* text under image */
+.box p {
+  color: grey;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+/* responsive adjustments */
+@media (max-width: 768px) {
+  .box { flex: 0 0 220px; max-width: 220px; }
+  .image-wrap { aspect-ratio: 1 / 1; }
+}
+
+@media (max-width: 480px) {
+  .team-content { gap: 16px; }
+  .box { flex: 0 0 180px; max-width: 180px; padding: 10px; }
+  .image-wrap { aspect-ratio: 1 / 1; }
+}
+
+/* fallback for old browsers: use padding-top if aspect-ratio unsupported */
+@supports not (aspect-ratio: 1/1) {
+  .image-wrap {
+    position: relative;
+    width: 100%;
+    padding-top: 100%; /* square */
+  }
+  .officer-images {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+  }
+}

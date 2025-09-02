@@ -4,7 +4,7 @@ import './Officers.css'
 function Calendar() {
     return (
         <main style={{ minHeight: 'calc(100vh - 300px)' }}>
-            <h1 className ='header-section'>Calendar</h1>
+            <h1 className ='header-section'><strong>Calendar</strong></h1>
             <div style = {{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80vh', marginTop: '-100px'}}>
                 <iframe 
                 src = "https://calendar.google.com/calendar/embed?src=tamu.quantum%40gmail.com&ctz=America%2FChicago"

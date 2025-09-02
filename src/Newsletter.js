@@ -37,23 +37,13 @@ function Newsletter() {
     return<p>No newsletters available.</p>;
   }
 
-  const latestNewsletter = newsletters[newsletters.length - 1];
+  
   const previousNewsletters = newsletters.slice(0, newsletters.length - 1).reverse();
 
   return (
     <main className='newsletter-container'>
-      <h1 className='header-section'>Newsletters</h1>
-      <div className='latest-newsletter'>
-        <iframe
-          src={latestNewsletter.Link}
-          width="50%"
-          height="800px"
-          style={{ border: 'none' }}
-          title=  {'Newsletter # {latestNewsletter.Number}'}
-        ></iframe>
-      </div>
+      <h1 className='header-section'><strong>Newsletters</strong></h1>
       <div className='previous-newsletters'>
-        <h2>Previous Newsletters:</h2>
         <ul>
           {previousNewsletters.map((newsletter, index) => (
             <li key={index}>

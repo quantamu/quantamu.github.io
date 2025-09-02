@@ -16,18 +16,21 @@ function About() {
 
     return (
         <main className='about-container'>
-            <h1>About us</h1>
-            <div className='text'>
-                <p>Howdy, and welcome to QuantA&M, Texas A&M's first student organization for those interested in learning more about quantum computing.
-                    We hope to achieve our mission by facilitating events and networking opportunities for our members, giving everyone an opportunity to 
-                    consider the vast field of quantum technology as an undergraduate. We are an inclusive org, targeting undergraduate students from all majors. 
-                    Graduate students may also participate in club activities, 
-                    but with the added option to serve as a "graduate mentor," offering advice and research assistance to undergrads on a flexible schedule. QuantA&M was
-                    founded halfway through the 2022-2023 academic year
-                    , and as such, we are slowly transitioning from a small student organization to a large one. We are currently offering free membership on an unofficial basis, all of our meetings are open to the student body, with no dues required. To learn more about what we do, check out the "Calendar" tab, and if you have further questions, contact someone from our team. Our current officers are listed in the "Officers" tab, and our official email is tamu.quantum@gmail.com. 
-                </p> 
-                <img src = {bloch} className = 'side-image'/>
+            <h1> <strong>About us</strong> </h1>
+            <div className= 'content-wrapper'>
+                <div className='text'>
+                    <p>Howdy, and welcome to QuantA&M, Texas A&M's first student organization for those interested in learning more about quantum computing.
+                        We hope to achieve our mission by facilitating events and networking opportunities for our members, giving everyone an opportunity to 
+                        consider the vast field of quantum technology as an undergraduate. We are an inclusive org, targeting undergraduate students from all majors. 
+                        Graduate students may also participate in club activities, 
+                        but with the added option to serve as a "graduate mentor," offering advice and research assistance to undergrads on a flexible schedule. QuantA&M was
+                        founded halfway through the 2022-2023 academic year
+                        , and as such, we are slowly transitioning from a small student organization to a large one. We are currently offering free membership on an unofficial basis, all of our meetings are open to the student body, with no dues required. To learn more about what we do, check out the "Calendar" tab, and if you have further questions, contact someone from our team. Our current officers are listed in the "Officers" tab, and our official email is tamu.quantum@gmail.com. 
+                    </p>  
+                </div>
+                <img src={bloch} className='side-image' alt="Bloch Sphere" />
             </div>
+    
             <p className = 'text2'> <b> Thanks and Gig'em! </b> </p>
                         
             <div className='grid-container'>
@@ -37,6 +40,7 @@ function About() {
                     <p className = 'grid-description'> Our book club, which meets biweekly, discusses the basics of quantum computing (this semester, quantum computing and computer science) through the use of a common book or textbook in the field. Previous semesters, we studied with the Qiskit textbook!</p>
                     <h4 className = 'download-link'> 
                         <a href='./pdf/book.pdf' download>
+                        
                          {/* reusing classnames to save code and time OK */}
                         <button className="join-us-button">Link to Download Book</button>
                     </a>
