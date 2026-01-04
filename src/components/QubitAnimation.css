@@ -1,0 +1,171 @@
+.qubit-animation-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  overflow: visible;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.entanglement-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.3;
+}
+
+.entanglement-line {
+  stroke-linecap: round;
+  filter: drop-shadow(0 0 4px rgba(0, 133, 255, 0.5));
+}
+
+.qubit {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  pointer-events: auto;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  z-index: 2;
+  will-change: transform;
+  opacity: 0.6;
+}
+
+.qubit:hover {
+  transform: scale(1.15) !important;
+  z-index: 10;
+  opacity: 1 !important;
+}
+
+.qubit:hover .qubit-glow {
+  opacity: 1 !important;
+  transform: scale(1.5) !important;
+}
+
+.qubit-sphere {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 0 10px rgba(0, 133, 255, 0.6));
+}
+
+.qubit-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(circle, rgba(0, 255, 127, 0.3) 0%, transparent 70%);
+  border-radius: 50%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Position qubits across the entire viewport */
+.qubit-1 {
+  top: 10%;
+  left: 10%;
+}
+
+.qubit-2 {
+  top: 20%;
+  right: 15%;
+}
+
+.qubit-3 {
+  top: 50%;
+  left: 5%;
+}
+
+.qubit-4 {
+  bottom: 20%;
+  left: 25%;
+}
+
+.qubit-5 {
+  bottom: 15%;
+  right: 20%;
+}
+
+.qubit-6 {
+  top: 60%;
+  right: 10%;
+}
+
+.qubit-7 {
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .qubit {
+    width: 80px;
+    height: 80px;
+    opacity: 0.5;
+  }
+
+  .entanglement-svg {
+    opacity: 0.2;
+  }
+
+  /* Adjust positions for tablet */
+  .qubit-6, .qubit-7 {
+    display: none; /* Hide some qubits on smaller screens to reduce clutter */
+  }
+}
+
+@media (max-width: 576px) {
+  .qubit {
+    width: 60px;
+    height: 60px;
+    opacity: 0.4;
+  }
+
+  .entanglement-svg {
+    opacity: 0.15;
+  }
+
+  .qubit-3, .qubit-4, .qubit-6, .qubit-7 {
+    display: none; /* Show only 3 qubits on mobile */
+  }
+}
+
+/* Additional visual effects */
+@keyframes quantum-pulse {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.qubit svg circle,
+.qubit svg ellipse,
+.qubit svg line {
+  animation: quantum-pulse 3s ease-in-out infinite;
+}
+
+/* Accessibility - reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  .qubit,
+  .qubit-sphere,
+  .qubit-glow,
+  .entanglement-line {
+    animation: none !important;
+  }
+}
+
+
+
+
+

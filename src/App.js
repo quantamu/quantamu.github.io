@@ -14,6 +14,8 @@ import Newsletter from './Newsletter';
 import Resources from './Resources';
 import Header from './components/Header';
 import Footer from './components/footer';
+import ScrollingCarousel from "./components/ScrollingCarousel";
+import QubitAnimation from './components/QubitAnimation';
 
 function App() {
   return (
@@ -57,6 +59,7 @@ function Home() {
 
   return (
     <main className="home-content">
+      <QubitAnimation />
       <div className="container-fluid">
         <div className="row justify-content-center">
           <div className="col-12 col-md-10 col-lg-8">
@@ -72,7 +75,10 @@ function Home() {
           </div>
         </div>
       </div>
+      <ScrollingCarousel />
     </main>
+    
+    
   );
 }
 

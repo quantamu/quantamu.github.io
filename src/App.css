@@ -8,6 +8,7 @@ body {
 
 .App {
   text-align: center;
+  position: relative;
 }
 
 .header-logo {
@@ -19,7 +20,7 @@ body {
   padding: 20px;
   color: white !important;
   background-color: #500001 !important;
-  z-index: 1000;
+  z-index: 1000 !important;
 }
 
 /* Bootstrap navbar overrides */
@@ -122,6 +123,15 @@ body {
   margin: 20px auto;
   padding: 0 15px;
   font-weight: 1.4rem !important;
+  position: relative;
+}
+
+.home-content .container-fluid,
+.home-content h1,
+.home-content .info-box,
+.home-content .button-container {
+  position: relative;
+  z-index: 5;
 }
 
 /* Responsive title */
@@ -255,6 +265,11 @@ body {
 }
 
 
+.Website-footer {
+  position: relative;
+  z-index: 100;
+}
+
 .Website-footer p{
   font-family:'Open Sans', sans-serif;
   font-weight: 600 !important;
@@ -291,6 +306,7 @@ body {
   margin-top: 420px;
   position: relative;               /* prevents absolute overlap */
   padding: 32px 0;
+  z-index: 100;
 }
 
 .Sponsor-header{

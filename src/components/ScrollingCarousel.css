@@ -1,0 +1,71 @@
+.carousel-bg {
+  width: 100%;
+  min-height: 200px;
+  overflow: hidden;
+  background: transparent;
+  padding: 40px 0;
+  position: relative;
+  margin-top: 40px;
+  z-index: 5;
+}
+
+.carousel-track {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: max-content;
+  padding: 20px 0;
+  position: relative;
+}
+
+.carousel-track-top {
+  animation: scroll-left 20s linear infinite;
+}
+
+.carousel-track-bottom {
+  animation: scroll-right 20s linear infinite;
+  margin-top: 20px;
+}
+
+.carousel-item {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.carousel-item:hover {
+  color: white;
+  background: linear-gradient(90deg, #ff4d4d, #0085ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.1);
+}
+
+@keyframes scroll-left {
+  0% { 
+    transform: translateX(0);
+  }
+  100% { 
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Remove debug outline */
+* {
+  outline: none;
+}
