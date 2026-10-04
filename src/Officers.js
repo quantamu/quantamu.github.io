@@ -1,7 +1,7 @@
 import React from 'react';
 import './Officers.css'
 import aditya from './assets/officers/aditya.png'
-import nathan from './assets/officers/nathan.png'
+import ishaan from './assets/officers/ishaan.png'
 import samuel from './assets/officers/samuel.png'
 import johnathan from  './assets/officers/johnathan.png'
 
@@ -33,7 +33,7 @@ function officers()  {
                     </div>
                     <div className = 'box'>
                         <div className ="image-wrap">
-                            <img src = {nathan} className = 'officer-images'/>
+                            <img src = {ishaan} className = 'officer-images'/>
                         </div>
                         <p> Ishaan Kelkar, Treasurer </p>
                     </div>
