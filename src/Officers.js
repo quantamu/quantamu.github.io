@@ -1,9 +1,9 @@
 import React from 'react';
 import './Officers.css'
-import Shameem from './assets/officers/shameem.png'
+import aditya from './assets/officers/aditya.png'
 import nathan from './assets/officers/nathan.png'
 import samuel from './assets/officers/samuel.png'
-import ezra from  './assets/officers/ezra.png'
+import johnathan from  './assets/officers/johnathan.png'
 
 function officers()  {
 
@@ -13,9 +13,9 @@ function officers()  {
                 <div className = 'team-content'>
                     <div className = 'box'>
                         <div className ="image-wrap">
-                            <img src = {Shameem} className = 'officer-images'/>
+                            <img src = {aditya} className = 'officer-images'/>
                         </div>
-                        <p> Shameem Monjazeb, President</p>
+                        <p> Aditya Mishra, President</p>
                     </div>
                     <div className = 'box'>
                         <div className ="image-wrap">
@@ -27,15 +27,15 @@ function officers()  {
                 <div className = 'team-content'>
                     <div className = 'box'>
                         <div className ="image-wrap">
-                            <img src = {ezra} className = 'officer-images'/>
+                            <img src = {johnathan} className = 'officer-images'/>
                         </div>
-                        <p> Ezra SoRelle, Secretary </p>
+                        <p> Johnathan Shirley, Secretary </p>
                     </div>
                     <div className = 'box'>
                         <div className ="image-wrap">
                             <img src = {nathan} className = 'officer-images'/>
                         </div>
-                        <p> Nathan Ngata, Treasurer </p>
+                        <p> Ishaan Kelkar, Treasurer </p>
                     </div>
 
                 </div>
