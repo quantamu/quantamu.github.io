@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.ad93fcce.css",
-    "main.js": "/static/js/main.472b2e6d.js",
+    "main.js": "/static/js/main.5adc3539.js",
     "static/js/488.9c92ff38.chunk.js": "/static/js/488.9c92ff38.chunk.js",
     "static/media/samuel.png": "/static/media/samuel.ff122f57c98344db5e99.png",
     "static/media/aditya.png": "/static/media/aditya.de6016f6997fe8104079.png",
     "static/media/johnathan.png": "/static/media/johnathan.b899ab4a57b6445a3790.png",
+    "static/media/ishaan.png": "/static/media/ishaan.31ab5e4ef01fc84e37ac.png",
     "static/media/bloch_white.png": "/static/media/bloch_white.4e417116fce6891d42d9.png",
     "static/media/CaiLogo.png": "/static/media/CaiLogo.6e64190110e71bbbebdb.png",
-    "static/media/nathan.png": "/static/media/nathan.8d7b0b714d3bb5681b3c.png",
     "static/media/logo2.png": "/static/media/logo2.f61a6c7dc423038bdfe6.png",
     "static/media/instagram.png": "/static/media/instagram.77614add5a06b2245961.png",
     "static/media/mail.png": "/static/media/mail.4cc34e7d4bfb802170e0.png",
@@ -16,11 +16,11 @@
     "static/media/TAMIDS-Identity-Left-Dark@3x.png": "/static/media/TAMIDS-Identity-Left-Dark@3x.89fce2ada79dbc11f7f2.png",
     "index.html": "/index.html",
     "main.ad93fcce.css.map": "/static/css/main.ad93fcce.css.map",
-    "main.472b2e6d.js.map": "/static/js/main.472b2e6d.js.map",
+    "main.5adc3539.js.map": "/static/js/main.5adc3539.js.map",
     "488.9c92ff38.chunk.js.map": "/static/js/488.9c92ff38.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ad93fcce.css",
-    "static/js/main.472b2e6d.js"
+    "static/js/main.5adc3539.js"
   ]
 }
