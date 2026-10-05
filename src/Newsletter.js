@@ -32,26 +32,45 @@ function Newsletter() {
     return <p>Error loading newsletters: {error.message}</p>;
   }
 
-  if(newsletters.length === 0)
-  {
-    return<p>No newsletters available.</p>;
+
+  const valid = newsletters.filter(n => n.Link && n.Number);
+
+  if (valid.length === 0) {
+    return <p>No newsletters available.</p>;
   }
 
-  
-  const previousNewsletters = newsletters.slice(0, newsletters.length - 1).reverse();
+  const latest = valid[valid.length - 1];          // last row = newest
+  const previous = valid.slice(0, -1).reverse();
+
+  /* Added dates now so it is easier for people to keep track of the chronology of Quant A&M */
 
   return (
     <main className='newsletter-container'>
       <h1 className='header-section'><strong>Newsletters</strong></h1>
-      <div className='previous-newsletters'>
-        <ul>
-          {previousNewsletters.map((newsletter, index) => (
-            <li key={index}>
-              <a href={newsletter.Link} download> Newsletter #{newsletter.Number}</a>
-            </li>
-          ))}
-        </ul>
-      </div>
+      <section className='latest-newsletter'>
+        <span className='latest-badge'>Latest</span>
+        <h2>Newsletter #{latest.Number}</h2>
+        <p className='latest-date'>{latest.Date}</p>
+        <a className='latest-button' href={latest.Link} target='_blank' rel='noopener noreferrer'>
+          Read now
+        </a>
+      </section>
+
+      {previous.length > 0 && (
+          <div className='previous-newsletters'>
+            <h3>Previous issues</h3>
+            <ul>
+              {previous.map(n => (
+                  <li key={n.Number}>
+                    <a href={n.Link} target='_blank' rel='noopener noreferrer'>
+                      Newsletter #{n.Number}
+                    </a>
+                    {n.Date && <span className='newsletter-date'>{n.Date}</span>}
+                  </li>
+              ))}
+            </ul>
+          </div>
+      )}
     </main>
   );
 }
