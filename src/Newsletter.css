@@ -1,43 +1,130 @@
 .newsletter-container {
-    padding: 20px;
-  }
-  
-  .header-section {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 3rem !important;
-    background: linear-gradient(90deg, #6b4dff, #e22514);
-    animation: fade-in 2s ease-in-out;
-    background-clip: text;
-    display: inline-block;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
-  .latest-newsletter {
-    margin-bottom: 40px;
-  }
-  
+  padding: 20px;
+  text-align: center;
+}
 
-  @media (max-width: 768px) {
-    .latest-newsletter iframe {
-      height: 300px;
-    }
+.header-section {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3rem !important;
+  background: linear-gradient(90deg, #6b4dff, #e22514);
+  animation: fade-in 2s ease-in-out;
+  background-clip: text;
+  display: inline-block;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ---------- Latest newsletter card ---------- */
+/* Made these changes to emphasize the latest newsletter over the previous*/
+.latest-newsletter {
+  max-width: 420px;
+  margin: 24px auto 40px;
+  padding: 28px 24px;
+  border-radius: 16px;
+  /* gradient border that matches the title */
+  border: 2px solid transparent;
+  background:
+          linear-gradient(#34304a, #34304a) padding-box,
+          linear-gradient(90deg, #6b4dff, #e22514) border-box;
+  box-shadow: 0 8px 28px rgba(107, 77, 255, 0.18);
+  animation: fade-in 2s ease-in-out;
+}
+
+.latest-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #6b4dff, #e22514);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.latest-newsletter h2 {
+  margin: 14px 0 20px;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.8rem;
+}
+
+/* pill button styled like "Join Us" */
+.latest-button {
+  display: inline-block;
+  padding: 10px 26px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #5cf08a, #5b8cff);
+  color: #1f1d2b;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.latest-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(91, 140, 255, 0.35);
+}
+
+/* ---------- Previous issues ---------- */
+.previous-newsletters h3 {
+  margin: 0 0 14px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
+.previous-newsletters ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.previous-newsletters li {
+  margin-bottom: 10px;
+}
+
+.previous-newsletters a {
+  color: #138dac;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.previous-newsletters a:hover {
+  color: grey;
+}
+
+.latest-newsletter h2 {
+  margin: 14px 0 6px;          /* tighten the gap above the date */
+}
+
+.latest-date {
+  margin: 0 0 20px;
+  color: #b9b4d0;
+  font-size: 0.9rem;
+}
+
+.newsletter-date {
+  margin-left: 10px;
+  color: #8a86a3;
+  font-size: 0.85rem;
+}
+
+.newsletter-date::before {
+  content: '·';
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .header-section {
+    font-size: 2.25rem !important;
   }
-  
-  .previous-newsletters ul {
-    list-style-type: none;
-    padding: 0;
+
+  .latest-newsletter {
+    margin: 20px 12px 32px;
+    padding: 22px 16px;
   }
-  
-  .previous-newsletters li {
-    margin-bottom: 10px;
-  }
-  
-  .previous-newsletters a {
-    color: #138dac;
-    text-decoration: none;
-  }
-  
-  .previous-newsletters a:hover {
-    color: grey;
-  }
+}
