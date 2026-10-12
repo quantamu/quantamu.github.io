@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Newsletter.css';
+import Papa from 'papaparse'
 
 // Using Sheets2API API OK
 function Newsletter() {
@@ -9,18 +10,26 @@ function Newsletter() {
 
   useEffect(() => {
     
-    const url = 'https://sheet2api.com/v1/YW0AA7DGRpKC/newsletter-database';
+    const url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRTtFw20B5ZMj8wTMnhwlCN-Jn3K2PMcU8Vlmvt3-OyISvXhBPoid9XD_6uHFfmC_2QE-h6NHqM2qPI/pub?gid=0&single=true&output=csv';
 
     fetch(url)
-      .then(response => response.json())
-      .then(data => {
-        setNewsletters(data);
-        setLoading(false);
-      })
-      .catch((error) => {
-        console.error('Error:', error);
-        setError(error);
-        setLoading(false);
+        .then(response => {
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+          return response.text();
+        })
+        .then(csv => {
+          const { data } = Papa.parse(csv, {
+            header: true,          // first row becomes the keys: Number, Link, Date
+            skipEmptyLines: true,
+            transformHeader: h => h.trim(),
+          });
+          setNewsletters(data);
+          setLoading(false);
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+          setError(error);
+          setLoading(false);
       });
   }, []);
 
