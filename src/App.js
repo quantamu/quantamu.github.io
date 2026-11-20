@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { HashRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 
@@ -17,6 +17,9 @@ import Footer from './components/footer';
 import ScrollingCarousel from "./components/ScrollingCarousel";
 import QubitAnimation from './components/QubitAnimation';
 
+// Loaded only when someone opens the Gates page (keeps three.js out of the main bundle)
+const QuantumGates = lazy(() => import('./QuantumGates'));
+
 function App() {
   return (
     <Router>
@@ -31,6 +34,14 @@ function App() {
             <Route path='/officers' element= {<Officers />} />
             <Route path='/resources' element= {<Resources />} />
             <Route path='/newsletter' element={<Newsletter />} />
+            <Route
+              path='/gates'
+              element={
+                <Suspense fallback={<p>Loading quantum gates...</p>}>
+                  <QuantumGates />
+                </Suspense>
+              }
+            />
           </Routes>
         </Container>
 
